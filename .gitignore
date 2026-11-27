@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.tmp
+*.log
+iqihang-settings.json
+.iqihang-transfer-log.json
+downloads/
+dist/
+build/
+*.zip
+*.part.*
+*.iqihang-parts/
