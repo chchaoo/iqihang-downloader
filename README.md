@@ -1,21 +1,18 @@
 # 爱启航课程下载器
 
+## [下载 Windows x64 免安装版](https://github.com/chchaoo/iqihang-downloader/releases/latest/download/iqihang-downloader-v2.4.0-portable-win-x64.zip)
+
+**解压后双击 `IQihangDownloader.exe`，登录并选择要下载的课程。** Windows 10 22H2 / Windows 11 x64 可直接使用。
+
+[下载 Python 源码版](https://github.com/chchaoo/iqihang-downloader/releases/latest/download/iqihang-downloader-v2.4.0-source.zip) · [历史版本](https://github.com/chchaoo/iqihang-downloader/releases)
+
+源码版解压后运行 `Start.cmd`。需要 Python 3.10+（含 Tkinter）。下载视频需将 FFmpeg、FFprobe 加入 `PATH`，aria2 和 yt-dlp 用于可选加速。
+
+## 项目介绍
+
 面向 Windows 的第三方桌面工具。用户自行登录爱启航后，可以浏览账户下的课程目录，并将获得保存许可的点播、回放和资料下载到本地。支持按课程或章节批量选择、并发下载、失败重试和高分屏缩放。
 
 本项目基于 [Tony15246/iqihang-cli](https://github.com/Tony15246/iqihang-cli) 的设计思路二次开发。桌面界面、下载队列、持久设置和打包流程为独立实现。上游仓库未声明开源许可，本仓库的许可仅适用于本项目自行编写的代码。本项目是第三方工具，与爱启航无官方关联。
-
-## 下载与使用
-
-| 版本 | 怎么启动 | 需要自行配置什么 |
-| --- | --- | --- |
-| **Windows x64 免安装版** | 从 Releases 下载 `*-portable-win-x64.zip`，完整解压后双击 `IQihangDownloader.exe` | 适用于 Windows 10 22H2 和 Windows 11 x64。随包提供 Python、FFmpeg、FFprobe、aria2 和 yt-dlp。无需修改 `PATH`。 |
-| **Python 源码版** | 在 [Releases](https://github.com/chchaoo/iqihang-downloader/releases) 下载 `*-source.zip`，或使用 GitHub 的 Code → Download ZIP。解压后双击 `Start.cmd` | 安装 Python 3.10+（含 Tkinter）。下载视频需把 `ffmpeg.exe`、`ffprobe.exe` 所在目录加入 `PATH`。可选配置 `aria2c.exe` 加速 HTTP 分段，配置 `yt-dlp.exe` 加速兼容的 HLS/DASH。 |
-
-[下载最新版本](https://github.com/chchaoo/iqihang-downloader/releases/latest)
-
-1. 输入自己的爱启航账号和密码，点击「登录并加载目录」。
-2. 选择保存目录，再选课程、章节或单个文件，点击「下载所选未完成」。也可用「下载全部未完成」。
-3. 在「界面缩放」调节字号和控件尺寸。运行后生成的 `iqihang-settings.json` 在程序旁边，账号及密码使用 Windows DPAPI 加密。「恢复默认」会删除配置文件。
 
 ## 使用范围与权利说明
 
